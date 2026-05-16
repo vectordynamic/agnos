@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  /* BACKGROUNDS - The Deep Void */
+  --bg-void: #0b0e17; /* Deep Midnight Blue */
+  --bg-card: #151e2e; /* Lighter Card Blue */
+  --bg-card-hover: #1e293b;
+
+  /* GOLDEN GLOW - The Energy */
+  --gold-500: #f59e0b;
+  --gold-400: #fbbf24;
+  --gold-600: #d97706;
+
+  /* TEXT */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* UTILITY */
+  --void-border: #1e293b;
+
+  /* FONT FALLBACKS (will be overridden by Next.js Font) */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* CUSTOM UTILITIES */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.golden-seam {
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #f59e0b, transparent);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+}
+
+.glass-card {
+  background: rgba(21, 30, 46, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
