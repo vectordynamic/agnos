@@ -8,7 +8,7 @@ import { Users, CheckCircle2, Globe2, TrendingUp } from "lucide-react";
 import { aboutPageData } from "@/lib/data";
 
 export default function AboutPage() {
-  const { hero, values, stats, team, cities } = aboutPageData;
+  const { hero, values, stats, team } = aboutPageData;
 
   return (
     <main className="bg-[#05080f] min-h-screen text-white font-sans selection:bg-amber-500/30">
